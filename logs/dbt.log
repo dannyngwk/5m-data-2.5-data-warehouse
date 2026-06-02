@@ -438,3 +438,17 @@ Runtime Error
 [0m22:29:34.546484 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x102a5fd50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x12289aa90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x12286b1d0>]}
 [0m22:29:34.546600 [debug] [MainThread]: Flushing usage events
 [0m22:29:35.475084 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m22:31:06.062809 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1077838d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x112c68c50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x112c6a750>]}
+
+
+============================== 22:31:06.065067 | 0ad7461d-bbad-420e-88d0-016ab1af297a ==============================
+[0m22:31:06.065067 [info ] [MainThread]: Running with dbt=1.10.9
+[0m22:31:06.065305 [debug] [MainThread]: running dbt with arguments {'indirect_selection': 'eager', 'quiet': 'False', 'empty': 'False', 'partial_parse': 'True', 'warn_error': 'None', 'log_path': '/Users/dannyng/Project_DS/5m-data-2.5-data-warehouse/logs', 'write_json': 'True', 'cache_selected_only': 'False', 'send_anonymous_usage_stats': 'True', 'use_colors': 'True', 'no_print': 'None', 'fail_fast': 'False', 'invocation_command': 'dbt run', 'log_cache_events': 'False', 'introspect': 'True', 'version_check': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'static_parser': 'True', 'log_format': 'default', 'profiles_dir': '/Users/dannyng/Project_DS/5m-data-2.5-data-warehouse/austin_bikeshare_demo', 'target_path': 'None', 'debug': 'False', 'use_experimental_parser': 'False', 'printer_width': '80'}
+[0m22:31:06.066427 [error] [MainThread]: Encountered an error:
+Runtime Error
+  Could not find profile named 'my_dbt_test'
+[0m22:31:06.067718 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": false, "command_wall_clock_time": 0.036391333, "process_in_blocks": "0", "process_kernel_time": 0.128826, "process_mem_max_rss": "112279552", "process_out_blocks": "0", "process_user_time": 0.451057}
+[0m22:31:06.067906 [debug] [MainThread]: Command `dbt run` failed at 22:31:06.067865 after 0.04 seconds
+[0m22:31:06.068042 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x112c6b1d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x102cb7d50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11279bbd0>]}
+[0m22:31:06.068167 [debug] [MainThread]: Flushing usage events
+[0m22:31:07.282459 [debug] [MainThread]: An error was encountered while trying to flush usage events
